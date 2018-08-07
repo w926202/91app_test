@@ -1,7 +1,7 @@
 require 'selenium-cucumber'
 delete_traction = DeleteTraction.new
 
-Given('I input key number2') do
+Given('I input key number 2') do
   navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
   delete_traction.clear_url
   delete_traction.input_url

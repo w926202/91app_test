@@ -7,6 +7,13 @@ Feature: Demo APIs
 
   @Del_traction
   Scenario:I want to use SCM test tool get the delete traction result
-  Given I input key number2
+  Given I input key number 2
   When I click button 2
   Then Result 2
+
+  @Get_traction
+  Scenario:I want to use SCM test tool get the traction result
+  Given I input key number 3
+  When I click button 3
+  Then Result 3
+
