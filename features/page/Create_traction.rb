@@ -1,6 +1,5 @@
-#require '...\page\scm_xpath'
 
-class SCMPAGE
+class CreateTraction
     XPATHS = {
         #Button
         time_stamp_btn:'//*[@data-bind="click: getCurrentTime"]',
@@ -30,15 +29,15 @@ class SCMPAGE
       end
 
       def input_token
-        enter_text(:xpath, '55688990', XPATHS[:token_textbox])
+        enter_text(:xpath, '00001688', XPATHS[:token_textbox])
       end
 
       def input_api
-        enter_text(:xpath, '8c443eb2-68d9-465c-9825-a8c226d53661',XPATHS[:api_textbox])
+        enter_text(:xpath, '35f3aa2f-ce90-4002-81f0-2adb78cc988c',XPATHS[:api_textbox])
       end
 
       def input_salt
-        enter_text(:xpath,'154b7d8b',XPATHS[:salt_textbox])
+        enter_text(:xpath,'123456',XPATHS[:salt_textbox])
       end
 
       def js_btn
@@ -49,13 +48,13 @@ class SCMPAGE
 
       def js_textbox
         enter_text(:xpath, '{
-          "ShopId": "11203",   
-          "LocationId": "13836",            
-          "LocationEmployeeId": "603338",      
-          "TransactionNumber": "test31",
-          "TransactionDateTime": "2018-07-23",
+          "ShopId": "64",   
+          "LocationId": "14613",            
+          "LocationEmployeeId": "0643",      
+          "TransactionNumber": "autotest01",
+          "TransactionDateTime": "2018-08-07",
           "CashierNumber": "1",
-          "MemberOuterId": "TWTBT0000863"
+          "MemberOuterId": "V00Y000532"
 }',XPATHS[:js_textbox])
         end
 
