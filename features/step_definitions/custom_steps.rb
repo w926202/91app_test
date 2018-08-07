@@ -8,21 +8,20 @@ Given('I input key number') do
   scm_page.input_token
   scm_page.input_api
   scm_page.input_salt
-  sleep 3
+  sleep 2
 end
 
 When('I click button') do
-  #scm_page.time_stamp
-  scm_page.get_signature
   scm_page.js_btn
   scm_page.js_textbox
   scm_page.time_stamp
+  scm_page.get_signature
   scm_page.send_data
-  sleep 3
+  sleep 2
 end
 
 Then('Result') do
   scm_page.scroll_end
   sleep 10
-
+  scm_page.scroll_end
 end

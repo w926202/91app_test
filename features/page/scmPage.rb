@@ -1,5 +1,4 @@
 #require '...\page\scm_xpath'
-API_JSON.new
 
 class SCMPAGE
     XPATHS = {
@@ -14,6 +13,7 @@ class SCMPAGE
         api_textbox: '//*[@name="apikey"]',
         salt_textbox:'//*[@name="saltkey"]',
         js_textbox:'//*[@data-bind="visible: mode() == NineYi.Scm.Api.ViewModels.FormMode.Json, value: dataBox"]',
+
 
         #Tab
         js_tab:'//*[@id="main"]/fieldset/div/div[7]/div/div/div/button[2]' 
@@ -74,7 +74,7 @@ class SCMPAGE
             wait(1)
             click(:xpath, XPATHS[:send_data_btn])
           end
-            
+
         def scroll_top
             scroll_page('top')
             wait(1)
