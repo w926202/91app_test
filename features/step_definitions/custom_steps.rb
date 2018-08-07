@@ -4,6 +4,7 @@ scm_page = SCMPAGE.new
 
 Given('I input key number') do
   navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
+  scm_page.clear_url
   scm_page.input_url
   scm_page.input_token
   scm_page.input_api

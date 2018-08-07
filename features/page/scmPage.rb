@@ -8,6 +8,7 @@ class SCMPAGE
         send_data_btn:'//*[@data-bind="click: sendData"]',
         
         #TextBox
+        clear_textbox:'//*[@name="url"]',
         url_textbox: '//*[@name="url"]',
         token_textbox:'//*[@name="token"]',
         api_textbox: '//*[@name="apikey"]',
@@ -20,8 +21,12 @@ class SCMPAGE
     
       }.freeze
 
+      def clear_url
+        clear_text(:xpath , XPATHS[:clear_textbox])
+      end
+
       def input_url
-        enter_text(:xpath, '/v2/location/CreateTransactionMapping', XPATHS[:url_textbox])
+        enter_text(:xpath, '/v2/Location/GetTransactionMappings', XPATHS[:url_textbox])
       end
 
       def input_token
