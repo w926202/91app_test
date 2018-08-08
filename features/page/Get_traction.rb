@@ -51,7 +51,7 @@ class GetTraction
         "ShopId": "64",   
         "LocationId": "14613",            
         "LocationEmployeeId": "0643",      
-        "MemberId": "70000055F2"
+        "MemberId": "V00Y000532"
         }',XPATHS[:js_textbox])
       end
 
