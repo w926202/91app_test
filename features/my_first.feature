@@ -17,3 +17,8 @@ Feature: Demo APIs
   When I click button 3
   Then Result 3
 
+  @Get_setting
+  Scenario:I want to use SCM test tool get the status result
+  Given I input key number 4
+  When I click button 4
+  Then Result 4
