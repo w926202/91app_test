@@ -1,7 +1,7 @@
 require 'selenium-cucumber'
 delete_traction = DeleteTraction.new
 
-Given('I input key number 2') do
+Given('填入刪除訂單key值') do
   navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
   delete_traction.clear_url
   delete_traction.input_url
@@ -11,7 +11,7 @@ Given('I input key number 2') do
   sleep 2
 end
 
-When('I click button 2') do
+When('點選刪除訂單過程中的所有按鈕') do
   delete_traction.js_btn
   delete_traction.js_textbox
   delete_traction.time_stamp
@@ -20,7 +20,7 @@ When('I click button 2') do
   sleep 2
 end
 
-Then('Result 2') do
+Then('回傳刪除訂單的API結果') do
   delete_traction.scroll_end
   sleep 10
   delete_traction.scroll_end

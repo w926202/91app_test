@@ -3,7 +3,7 @@ require 'selenium-cucumber'
 create_Traction = CreateTraction.new
 
 
-Given('I input key number') do
+Given('填入產生訂單Key值') do
   navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
   create_Traction.clear_url
   create_Traction.input_url
@@ -13,7 +13,7 @@ Given('I input key number') do
   sleep 2
 end
 
-When('I click button') do
+When('點選產生訂單過程中的所有按鈕') do
   create_Traction.js_btn
   create_Traction.js_textbox
   create_Traction.time_stamp
@@ -22,7 +22,7 @@ When('I click button') do
   sleep 2
 end
 
-Then('Result') do
+Then('回傳產生訂單的API結果') do
   create_Traction.scroll_end
   sleep 10
   create_Traction.scroll_end

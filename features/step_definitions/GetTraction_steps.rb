@@ -2,7 +2,7 @@ require 'selenium-cucumber'
 get_traction = GetTraction.new
 
 
-Given('I input key number 3') do
+Given('填入查詢訂單紀錄Key值') do
   navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
   get_traction.clear_url
   get_traction.input_url
@@ -12,7 +12,7 @@ Given('I input key number 3') do
   sleep 2
 end
 
-When('I click button 3') do
+When('點選查詢訂單過程中的所有按鈕') do
   get_traction.js_btn
   get_traction.js_textbox
   get_traction.time_stamp
@@ -21,7 +21,7 @@ When('I click button 3') do
   sleep 2
 end
 
-Then('Result 3') do
+Then('回傳查詢訂單的API結果') do
   get_traction.scroll_end
   sleep 10
   get_traction.scroll_end

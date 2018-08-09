@@ -1,24 +1,24 @@
 Feature: Demo APIs
   @Crt_traction
-  Scenario: I want to use SCM test tool get the create traction result
-    Given I input key number
-    When I click button
-    Then Result
+  Scenario: 使用SCM test tool 產生訂單
+    Given 填入產生訂單Key值
+    When 點選產生訂單過程中的所有按鈕
+    Then 回傳產生訂單的API結果
 
   @Del_traction
-  Scenario:I want to use SCM test tool get the delete traction result
-  Given I input key number 2
-  When I click button 2
-  Then Result 2
+  Scenario:使用SCM test tool 刪除訂單
+  Given 填入刪除訂單key值
+  When 點選刪除訂單過程中的所有按鈕
+  Then 回傳刪除訂單的API結果
 
   @Get_traction
-  Scenario:I want to use SCM test tool get the traction result
-  Given I input key number 3
-  When I click button 3
-  Then Result 3
+  Scenario:使用SCM test tool 查詢訂單紀錄
+  Given 填入查詢訂單紀錄Key值
+  When 點選查詢訂單過程中的所有按鈕
+  Then 回傳查詢訂單的API結果
 
   @Get_setting
-  Scenario:I want to use SCM test tool get the status result
-  Given I input key number 4
-  When I click button 4
-  Then Result 4
+  Scenario:使用SCM test tool 查詢輸入交易單號開關狀態
+  Given 填入查詢輸入交易單號Key值
+  When 點選查詢輸入交易單號開關狀態過程中的所有按鈕
+  Then 回傳輸入交易單號開關狀態的API結果
