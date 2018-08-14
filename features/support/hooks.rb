@@ -28,11 +28,10 @@ end
 #   # with @Ex_tag1 OR @Ex_tag2.
 # end
 
-# AfterStep('@Ex_tag1, @Ex_tag2') do |scenario|
-#   # This will only run after steps within scenarios tagged
-#   # with @Ex_tag1 AND @Ex_tag2.
-# end
-
+AfterStep do
+ sleep 2
+end
+ 
 # Around('@Ex_tag1') do |scenario, block|
 #   # Will round around a scenario
 # end
