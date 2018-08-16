@@ -4,7 +4,7 @@ create_Traction = CreateTraction.new
 
 
 Given('填入產生訂單Key值') do
-  navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
+  navigate_to('')
   create_Traction.clear_url
   create_Traction.input_url
   create_Traction.input_token

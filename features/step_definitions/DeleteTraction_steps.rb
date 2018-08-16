@@ -2,7 +2,7 @@ require 'selenium-cucumber'
 delete_traction = DeleteTraction.new
 
 Given('填入刪除訂單key值') do
-  navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
+  navigate_to('')
   delete_traction.clear_url
   delete_traction.input_url
   delete_traction.input_token

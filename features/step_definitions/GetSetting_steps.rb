@@ -3,7 +3,7 @@ get_setting = GetSetting.new
 
 
 Given('填入查詢輸入交易單號Key值') do
-  navigate_to('http://api.qa5.91dev.tw/scm/v1/sample')
+  navigate_to('')
   get_setting.clear_url
   get_setting.input_url
   get_setting.input_token
