@@ -8,7 +8,7 @@ Given('填入刪除訂單key值') do
   delete_traction.input_token
   delete_traction.input_api
   delete_traction.input_salt
-  sleep 2
+  
 end
 
 When('點選刪除訂單過程中的所有按鈕') do
@@ -17,7 +17,7 @@ When('點選刪除訂單過程中的所有按鈕') do
   delete_traction.time_stamp
   delete_traction.get_signature
   delete_traction.send_data
-  sleep 2
+  
 end
 
 Then('回傳刪除訂單的API結果') do

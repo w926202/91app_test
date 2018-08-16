@@ -10,7 +10,7 @@ Given('填入產生訂單Key值') do
   create_Traction.input_token
   create_Traction.input_api
   create_Traction.input_salt
-  sleep 2
+  
 end
 
 When('點選產生訂單過程中的所有按鈕') do
@@ -19,7 +19,7 @@ When('點選產生訂單過程中的所有按鈕') do
   create_Traction.time_stamp
   create_Traction.get_signature
   create_Traction.send_data
-  sleep 2
+  
 end
 
 Then('回傳產生訂單的API結果') do

@@ -51,10 +51,10 @@ class CreateTraction
           "ShopId": "64",   
           "LocationId": "14613",            
           "LocationEmployeeId": "0643",      
-          "TransactionNumber": "autotest01",
-          "TransactionDateTime": "2018-08-07",
+          "TransactionNumber": "autotest099",
+          "TransactionDateTime": "2018-08-14",
           "CashierNumber": "1",
-          "MemberOuterId": "V00Y000532"
+          "MemberOuterId": ""
 }',XPATHS[:js_textbox])
         end
 
