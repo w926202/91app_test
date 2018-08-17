@@ -25,19 +25,23 @@ class CreateTraction
       end
 
       def input_url
+<<<<<<< HEAD
         enter_text(:xpath, '/v2/location/CreateTransactionMapping', XPATHS[:url_textbox])
+=======
+        enter_text(:xpath, '', XPATHS[:url_textbox])
+>>>>>>> 365e2a73fa26d1d3b0cf86bafee6c4a2b046d056
       end
 
       def input_token
-        enter_text(:xpath, '00001688', XPATHS[:token_textbox])
+        enter_text(:xpath, '', XPATHS[:token_textbox])
       end
 
       def input_api
-        enter_text(:xpath, '35f3aa2f-ce90-4002-81f0-2adb78cc988c',XPATHS[:api_textbox])
+        enter_text(:xpath, '',XPATHS[:api_textbox])
       end
 
       def input_salt
-        enter_text(:xpath,'123456',XPATHS[:salt_textbox])
+        enter_text(:xpath,'',XPATHS[:salt_textbox])
       end
 
       def js_btn
