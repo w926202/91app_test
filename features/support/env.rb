@@ -2,7 +2,7 @@ require 'rubygems'
 require 'selenium-cucumber'
 
 # Store command line arguments
-Selenium::WebDriver::Chrome.driver_path = 'C:\selenium_driver_chrome\chromedriver.exe'
+Selenium::WebDriver::Chrome.driver_path = 'C:\chromedriver\chromedriver.exe'
 $browser_type = ENV['BROWSER'] || 'chrome'
 $platform = ENV['PLATFORM'] || 'desktop'
 $os_version = ENV['OS_VERSION']
