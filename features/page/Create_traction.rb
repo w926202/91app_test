@@ -25,7 +25,7 @@ class CreateTraction
       end
 
       def input_url
-        enter_text(:xpath, '/v2/Location/GetTransactionMappings', XPATHS[:url_textbox])
+        enter_text(:xpath, '/v2/location/CreateTransactionMapping', XPATHS[:url_textbox])
       end
 
       def input_token
@@ -52,7 +52,7 @@ class CreateTraction
           "LocationId": "14613",            
           "LocationEmployeeId": "0643",      
           "TransactionNumber": "autotest099",
-          "TransactionDateTime": "2018-08-14",
+          "TransactionDateTime": "2018-03-14",
           "CashierNumber": "1",
           "MemberOuterId": ""
 }',XPATHS[:js_textbox])
