@@ -1,5 +1,4 @@
-
-class CreateTraction
+class  CreateTraction
     XPATHS = {
         #Button
         time_stamp_btn:'//*[@data-bind="click: getCurrentTime"]',
@@ -25,11 +24,7 @@ class CreateTraction
       end
 
       def input_url
-<<<<<<< HEAD
-        enter_text(:xpath, '/v2/location/CreateTransactionMapping', XPATHS[:url_textbox])
-=======
         enter_text(:xpath, '', XPATHS[:url_textbox])
->>>>>>> 365e2a73fa26d1d3b0cf86bafee6c4a2b046d056
       end
 
       def input_token
@@ -52,12 +47,12 @@ class CreateTraction
 
       def js_textbox
         enter_text(:xpath, '{
-          "ShopId": "64",   
-          "LocationId": "14613",            
-          "LocationEmployeeId": "0643",      
-          "TransactionNumber": "autotest099",
-          "TransactionDateTime": "2018-03-14",
-          "CashierNumber": "1",
+          "ShopId": "",   
+          "LocationId": "",            
+          "LocationEmployeeId": "",      
+          "TransactionNumber": "",
+          "TransactionDateTime": "",
+          "CashierNumber": "",
           "MemberOuterId": ""
 }',XPATHS[:js_textbox])
         end

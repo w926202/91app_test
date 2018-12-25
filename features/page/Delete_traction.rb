@@ -12,6 +12,7 @@ class DeleteTraction
       api_textbox: '//*[@name="apikey"]',
       salt_textbox:'//*[@name="saltkey"]',
       js_textbox:'//*[@data-bind="visible: mode() == NineYi.Scm.Api.ViewModels.FormMode.Json, value: dataBox"]',
+      
 
 
       #Tab

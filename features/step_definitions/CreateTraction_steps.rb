@@ -24,6 +24,6 @@ end
 
 Then('回傳產生訂單的API結果') do
   create_Traction.scroll_end
-  sleep 10
+  sleep 3
   create_Traction.scroll_end
 end

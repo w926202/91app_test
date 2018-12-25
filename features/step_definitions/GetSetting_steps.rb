@@ -23,6 +23,6 @@ end
 
 Then('回傳輸入交易單號開關狀態的API結果') do
   get_setting.scroll_end
-  sleep 10
+  sleep 3
   get_setting.scroll_end
 end

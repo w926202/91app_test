@@ -22,6 +22,6 @@ end
 
 Then('回傳刪除訂單的API結果') do
   delete_traction.scroll_end
-  sleep 10
+  sleep 3
   delete_traction.scroll_end
 end

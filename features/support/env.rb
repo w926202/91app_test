@@ -23,7 +23,8 @@ if $platform == 'android' or $platform == 'iOS'
   if $platform == 'android'
     $device_name, $os_version = get_device_info
   end
-  
+
+
   desired_caps = {
     caps:       {
       platformName:  $platform,
@@ -50,7 +51,7 @@ else # else create driver instance for desktop browser
     options = Selenium::WebDriver::Chrome::Options.new(args: ['--lang=ch'])
     $driver = Selenium::WebDriver.for(:"#{$browser_type}", options: options)
     $driver.manage().window().maximize()
-  rescue Exception => e
+     rescue Exception => e
     puts e.message
     Process.exit(0)
   end
